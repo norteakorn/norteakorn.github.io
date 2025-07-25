@@ -3,16 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Flashcards</title>
+  <title>Flashcards Interactivas</title>
   <style>
     body {
       font-family: sans-serif;
-      background: #f2f2f2;
-      margin: 0;
+      background: #f0f0f0;
       padding: 2rem;
+      text-align: center;
+    }
+
+    .grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .grid button {
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
+      border: none;
+      background-color: #4a90e2;
+      color: white;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .grid button:hover {
+      background-color: #3a7bd5;
+    }
+
+    .card-container {
+      display: none;
       justify-content: center;
     }
 
@@ -20,6 +45,7 @@
       width: 200px;
       height: 260px;
       perspective: 1000px;
+      cursor: pointer;
     }
 
     .card-inner {
@@ -30,7 +56,7 @@
       transform-style: preserve-3d;
     }
 
-    .card:hover .card-inner {
+    .card.flipped .card-inner {
       transform: rotateY(180deg);
     }
 
@@ -44,11 +70,10 @@
     }
 
     .card-front {
-      background: #fff;
+      background: white;
       display: flex;
       align-items: center;
       justify-content: center;
-      overflow: hidden;
     }
 
     .card-front img {
@@ -70,31 +95,56 @@
 </head>
 <body>
 
-  <!-- Tarjeta 1 -->
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="https://via.placeholder.com/200x260.png?text=Imagen+1" alt="Imagen 1">
-      </div>
-      <div class="card-back">
-        <p>Esta es la descripción de la imagen 1.</p>
+  <h1>Flashcards Interactivas</h1>
+  <p>Tocá un número para ver una tarjeta. Tocá la tarjeta para darla vuelta.</p>
+
+  <div class="grid">
+    <button onclick="showCard(1)">1</button>
+    <button onclick="showCard(2)">2</button>
+    <button onclick="showCard(3)">3</button>
+    <!-- Podés agregar más botones acá -->
+  </div>
+
+  <div class="card-container" id="card-container">
+    <div class="card" id="flashcard" onclick="flipCard()">
+      <div class="card-inner">
+        <div class="card-front" id="card-front">
+          <img src="https://via.placeholder.com/200x260.png?text=Imagen+1" alt="Imagen">
+        </div>
+        <div class="card-back" id="card-back">
+          <p>Texto de la tarjeta</p>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Tarjeta 2 -->
-  <div class="card">
-    <div class="card-inner">
-      <div class="card-front">
-        <img src="https://via.placeholder.com/200x260.png?text=Imagen+2" alt="Imagen 2">
-      </div>
-      <div class="card-back">
-        <p>Texto de la imagen 2. Podés escribir lo que quieras acá.</p>
-      </div>
-    </div>
-  </div>
+  <script>
+    const cardContainer = document.getElementById('card-container');
+    const flashcard = document.getElementById('flashcard');
+    const cardFront = document.getElementById('card-front');
+    const cardBack = document.getElementById('card-back');
 
-  <!-- Podés seguir copiando más tarjetas así -->
+    function showCard(number) {
+      cardContainer.style.display = 'flex';
+      flashcard.classList.remove('flipped');
+
+      // Configurar contenido según el número
+      if (number === 1) {
+        cardFront.innerHTML = '<img src="https://via.placeholder.com/200x260.png?text=Perro" alt="Perro">';
+        cardBack.innerHTML = '<p>Es un perro simpático</p>';
+      } else if (number === 2) {
+        cardFront.innerHTML = '<img src="https://via.placeholder.com/200x260.png?text=Gato" alt="Gato">';
+        cardBack.innerHTML = '<p>Este es un gato misterioso</p>';
+      } else if (number === 3) {
+        cardFront.innerHTML = '<img src="https://via.placeholder.com/200x260.png?text=Libro" alt="Libro">';
+        cardBack.innerHTML = '<p>Una enciclopedia antigua</p>';
+      }
+    }
+
+    function flipCard() {
+      flashcard.classList.toggle('flipped');
+    }
+  </script>
 
 </body>
 </html>
