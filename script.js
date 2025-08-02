@@ -1,10 +1,10 @@
 const cards = {
   1: {
-    img: "images/Territorio1.png",
+    img: "images/Territorio 1.png",
     text: "Información del territorio 1"
   },
   2: {
-    img: "images/Territorio2.png",
+    img: "images/Territorio 2.png",
     text: "Información del territorio 2"
   },
   3: {
