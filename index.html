@@ -1,164 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Flashcards Interactivas</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tarjetas de Territorio</title>
   <style>
     body {
       font-family: sans-serif;
-      background: #f0f0f0;
-      margin: 0;
-      padding: 2rem;
-      text-align: center;
-    }
-
-    .grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
       justify-content: center;
-      margin-bottom: 2rem;
-    }
-
-    .grid button {
-      width: 60px;
-      height: 60px;
-      font-size: 20px;
-      border: none;
-      background-color: #4a90e2;
-      color: white;
-      border-radius: 50%;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .grid button:hover {
-      background-color: #3a7bd5;
-    }
-
-    .card-container {
-      display: none;
-      justify-content: center;
-      align-items: center;
-      height: 80vh;
+      padding: 2rem;
+      background-color: #f4f4f4;
     }
 
     .card {
-      width: 90vw;
-      max-width: 900px;
-      height: 50vh;
+      width: 350px;
+      height: 250px;
       perspective: 1000px;
-      cursor: pointer;
+      margin: 1rem;
     }
 
     .card-inner {
+      position: relative;
       width: 100%;
       height: 100%;
-      position: relative;
-      transition: transform 0.6s;
+      transition: transform 0.8s;
       transform-style: preserve-3d;
+      cursor: pointer;
     }
 
     .card.flipped .card-inner {
       transform: rotateY(180deg);
     }
 
-    .card-front, .card-back {
+    .card-front,
+    .card-back {
       position: absolute;
       width: 100%;
       height: 100%;
       backface-visibility: hidden;
-      border-radius: 16px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
       overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     .card-front {
-      background: white;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .card-front img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
+      object-fit: contain;
     }
 
     .card-back {
-      background: #4a90e2;
+      background-color: #2c3e50;
       color: white;
       transform: rotateY(180deg);
-      font-size: 1.8rem;
-      padding: 2rem;
-      box-sizing: border-box;
-    }
-
-    @media (max-width: 600px) {
-      .card {
-        height: 60vh;
-        width: 95vw;
-      }
-
-      .card-back {
-        font-size: 1.2rem;
-      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-  <h1>Flashcards Interactivas</h1>
-  <p>Tocá un número para ver una tarjeta. Tocá la tarjeta para darla vuelta.</p>
-
-  <div class="grid">
-    <button onclick="showCard(1)">1</button>
-    <button onclick="showCard(2)">2</button>
-    <button onclick="showCard(3)">3</button>
-  </div>
-
-  <div class="card-container" id="card-container">
-    <div class="card" id="flashcard" onclick="flipCard()">
-      <div class="card-inner">
-        <div class="card-front" id="card-front">
-          <img src="https://via.placeholder.com/900x500.png?text=Imagen+1" alt="Imagen 1">
-        </div>
-        <div class="card-back" id="card-back">
-          <p>Texto de la tarjeta</p>
-        </div>
+  <!-- Repetir esta tarjeta cambiando el src y el contenido del reverso -->
+  <div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <img src="Territorio 2.png" alt="Territorio 2" />
+      </div>
+      <div class="card-back">
+        <p>Territorio 2 – Norte Alejandro Korn<br>¡Recuerda informar al hermano si lo terminas!</p>
       </div>
     </div>
   </div>
-
-  <script>
-    const cardContainer = document.getElementById('card-container');
-    const flashcard = document.getElementById('flashcard');
-    const cardFront = document.getElementById('card-front');
-    const cardBack = document.getElementById('card-back');
-
-    function showCard(number) {
-      cardContainer.style.display = 'flex';
-      flashcard.classList.remove('flipped');
-
-      // Configurá los contenidos personalizados acá
-      if (number === 1) {
-        cardFront.innerHTML = '<img src="imagenes/JW imagen (7).jpg" alt="Perro">';
-        cardBack.innerHTML = '<p>Este es un perro feliz que vive en la granja.</p>';
-      } else if (number === 2) {
-        cardFront.innerHTML = '<img src="https://via.placeholder.com/900x500.png?text=Gato" alt="Gato">';
-        cardBack.innerHTML = '<p>Gato pensativo mirando por la ventana.</p>';
-      } else if (number === 3) {
-        cardFront.innerHTML = '<img src="https://via.placeholder.com/900x500.png?text=Paisaje" alt="Paisaje">';
-        cardBack.innerHTML = '<p>Un paisaje montañoso durante el atardecer.</p>';
-      }
-    }
-
-    function flipCard() {
-      flashcard.classList.toggle('flipped');
-    }
-  </script>
 
 </body>
 </html>
