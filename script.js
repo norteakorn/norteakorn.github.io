@@ -78,7 +78,7 @@ const cards = {
 20: {
     img: "images/Territorio 20.png",
     text: "Información del territorio 4"
-  }.
+  },
 21: {
     img: "images/Territorio 21.png",
     text: "Información del territorio 4"
