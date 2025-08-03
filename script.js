@@ -1,5 +1,5 @@
 function checkPassword() {
-  const correctPassword = "1234"; // Cambiá esto por la contraseña que quieras
+  const correctPassword = "korn"; // Cambiá esto por la contraseña que quieras
   const input = document.getElementById("password-input").value;
 
   if (input === correctPassword) {
