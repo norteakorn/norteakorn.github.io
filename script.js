@@ -19,7 +19,16 @@ const cards = {
   },
   2: {
     img: "images/Territorio 2.png",
-    text: "Información del territorio 2"
+    text: `
+  <h3>Territorio 4</h3>
+  <p>Este territorio incluye varias regiones destacadas por su biodiversidad.</p>
+  <ul>
+    <li>Clima templado</li>
+    <li>Presencia de ríos y montañas</li>
+    <li>Culturas originarias</li>
+  </ul>
+`
+
   },
   3: {
     img: "images/Territorio 3.png",
