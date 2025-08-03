@@ -8,11 +8,11 @@ const cards = {
     text: "Información del territorio 2"
   },
   3: {
-    img: "images/Territorio3.png",
+    img: "images/Territorio 3.png",
     text: "Información del territorio 3"
   },
   4: {
-    img: "images/Territorio4.png",
+    img: "images/Territorio 4.png",
     text: "Información del territorio 4"
   }
   // agregá más tarjetas acá
