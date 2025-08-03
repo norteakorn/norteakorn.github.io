@@ -76,7 +76,24 @@ button {
 }
 
 .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  background-color: #fffef2;
+  color: #333;
   transform: rotateY(180deg);
-  font-size: 1.5rem;
-  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* importante para que no se corte el contenido */
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+}
+
 }
