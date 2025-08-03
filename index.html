@@ -7,12 +7,22 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Tarjetas de Territorios</h1>
+  <!-- Pantalla de contraseña -->
+  <div id="password-screen">
+    <h2>Ingrese la contraseña</h2>
+    <input type="password" id="password-input" placeholder="Contraseña">
+    <button onclick="checkPassword()">Entrar</button>
+    <p id="password-error" style="color: red; display: none;">Contraseña incorrecta</p>
+  </div>
 
-  <div class="buttons" id="buttons-container"></div>
-
-  <div id="card-container"></div>
+  <!-- Contenido principal oculto hasta ingresar la contraseña -->
+  <div id="main-content" style="display: none;">
+    <h1>Tarjetas de Territorios</h1>
+    <div class="buttons" id="buttons-container"></div>
+    <div id="card-container"></div>
+  </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
