@@ -1,3 +1,17 @@
+function checkPassword() {
+  const correctPassword = "1234"; // Cambiá esto por la contraseña que quieras
+  const input = document.getElementById("password-input").value;
+
+  if (input === correctPassword) {
+    document.getElementById("password-screen").style.display = "none";
+    document.getElementById("main-content").style.display = "block";
+    createButtons();
+    showCard(1);
+  } else {
+    document.getElementById("password-error").style.display = "block";
+  }
+}
+
 const cards = {
   1: {
     img: "images/Territorio 1.png",
@@ -226,7 +240,7 @@ const cards = {
 57: {
   img: "images/Territorio 57 (RURAL).png",
   text: "Información del territorio 57"
-}
+},
 
   // agregá más tarjetas acá
 };
@@ -244,10 +258,10 @@ function createButtons() {
 }
 
 // Llamamos a createButtons para que aparezcan los botones al cargar la página
-createButtons();
+//createButtons();
 
 // Opcional: mostrar la primera tarjeta al cargar
-showCard(1);
+//showCard(1);
 
 function showCard(id) {
   const container = document.getElementById("card-container");
