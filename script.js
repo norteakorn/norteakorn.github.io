@@ -120,7 +120,17 @@ const cards = {
   },
 25: {
     img: "images/Territorio 25.png",
-    text: "Información del territorio 4"
+    text: `
+  <div style="text-align: left;">
+    <strong>No visitar</strong><br><br>
+
+    La Madrid 351<br>
+    Diciembre 2015<br><br>
+
+    La Madrid 365<br>
+    Diciembre 2015
+  </div>
+`
   },
 26: {
     img: "images/Territorio 26.png",
