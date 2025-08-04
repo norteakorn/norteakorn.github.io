@@ -15,48 +15,79 @@ function checkPassword() {
 const cards = {
   1: {
     img: "images/Territorio 1.png",
-    text: "Información del territorio 1"
+    text:  `
+    <div style="text-align: left;">
+      <strong>No visitar</strong><br><br>
+    </div>
+  `
   },
   2: {
     img: "images/Territorio 2.png",
     text: `
-  <h3>Territorio 4</h3>
-  <p>Este territorio incluye varias regiones destacadas por su biodiversidad.</p>
-  <ul>
-    <li>Clima templado</li>
-    <li>Presencia de ríos y montañas</li>
-    <li>Culturas originarias</li>
-  </ul>
-`
+    <div style="text-align: left;">
+      <strong>No visitar</strong><br><br>
+    </div>
+  `
 
   },
   3: {
     img: "images/Territorio 3.png",
-    text: "Información del territorio 3"
+    text: `
+    <div style="text-align: left;">
+      <strong>No visitar</strong><br><br>
+    </div>
+  `
   },
   4: {
     img: "images/Territorio 4.png",
-    text: "Información del territorio 4"
+    text:`
+    <div style="text-align: left;">
+      <strong>No visitar</strong><br><br>
+    </div>
+  `
   },
   5: {
     img: "images/Territorio 5.png",
-    text: "Información del territorio 4"
+    text: `
+    <div style="text-align: left;">
+      <strong>No visitar</strong><br><br>
+    </div>
+  `
   },
 6: {
     img: "images/Territorio 6.png",
-    text: "Información del territorio 4"
+    text: `
+    <div style="text-align: left;">
+      <strong>No visitar</strong><br><br>
+    </div>
+  `
   },
 7: {
     img: "images/Territorio 7.png",
-    text: "Información del territorio 4"
+    text: `
+    <div style="text-align: left;">
+      <strong>No visitar</strong><br><br>
+    </div>
+  `
   },
 8: {
     img: "images/Territorio 8.png",
-    text: "Información del territorio 4"
+    text: `
+    <div style="text-align: left;">
+      <strong>No visitar</strong><br><br>
+    </div>
+  `
   },
 9: {
     img: "images/Territorio 9.png",
-    text: "Información del territorio 4"
+    text: `
+    <div style="text-align: left;">
+      <strong>No visitar</strong><br><br>
+
+      Velez Sarfield 53<br>
+      Diciembre 2015<br><br>
+    </div>
+  `
   },
 10: {
     img: "images/Territorio 10.png",
