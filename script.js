@@ -119,12 +119,14 @@ const cards = {
     text: "Información del territorio 4"
   },
 25: {
-    img: "images/Territorio 25.png",
-    text: `
-  <div style="text-align: left;">
-    <strong>No visitar</strong><br><br>
-  </div>
-  },
+  img: "images/Territorio 25.png",
+  text: `
+    <div style="text-align: left;">
+      <strong>No visitar</strong><br><br>
+    </div>
+  `
+},
+
 26: {
     img: "images/Territorio 26.png",
     text: "Información del territorio 4"
@@ -154,18 +156,20 @@ const cards = {
     text: "Información del territorio 4"
   },
 33: {
-    img: "images/Territorio 33.png",
-    text: 
-      <div style="text-align: left;">
-    <strong>No visitar</strong><br><br>
+  img: "images/Territorio 33.png",
+  text: `
+    <div style="text-align: left;">
+      <strong>No visitar</strong><br><br>
 
-    La Madrid 351<br>
-    Diciembre 2015<br><br>
+      La Madrid 351<br>
+      Diciembre 2015<br><br>
 
-    La Madrid 365<br>
-    Diciembre 2015
-  </div>
-  },
+      La Madrid 365<br>
+      Diciembre 2015
+    </div>
+  `
+},
+
 34: {
     img: "images/Territorio 34.png",
     text: "Información del territorio 4"
