@@ -124,7 +124,6 @@ const cards = {
   <div style="text-align: left;">
     <strong>No visitar</strong><br><br>
   </div>
-`
   },
 26: {
     img: "images/Territorio 26.png",
