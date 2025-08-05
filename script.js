@@ -99,7 +99,7 @@ const cards = {
       28-11-18<br><br>
 
       Ameghino 92 <br>
-     29-11-18<br><br
+     29-11-18<br><br>
 
      Almirante Brown 73  <br>
      14-07-19<br><br>
@@ -267,7 +267,6 @@ const cards = {
       <strong>No visitar</strong><br><br>
 
       Vidal 412<br>
-   ` 
     </div>
   `
   },
@@ -342,6 +341,7 @@ const cards = {
 
       Lavalle 111<br>
       Abril 2019<br>
+      </div>
    ` 
   },
 35: {
@@ -352,6 +352,7 @@ const cards = {
 
       Moreno 84<br>
       27-07-2018<br>
+      </div>
    ` 
   },
 36: {
@@ -362,6 +363,7 @@ const cards = {
 
       25 de Mayo 187<br>
       Diciembre 2015<br>
+      </div>
    ` 
   },
 37: {
@@ -382,6 +384,7 @@ const cards = {
       02-08-2018<br>
 
       Ruta 210 29.221 <br>
+      </div>
    ` 
   },
 39: {
@@ -416,6 +419,7 @@ const cards = {
 
       Lorenzini 1346 <br>
       24-09-2019<br>
+      </div>
    ` 
   },
 43: {
@@ -443,7 +447,7 @@ const cards = {
   `
   },
 46: {
-    img: "images/Territorio 4.png",
+    img: "images/Territorio 46.png",
     text: `
     <div style="text-align: left;">
       <strong>No visitar</strong><br><br>
@@ -498,6 +502,7 @@ const cards = {
 
       Japón 2753 <br>
       Marzo 2019<br>
+      </div>
    ` 
 },
 53: {
