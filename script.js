@@ -118,7 +118,7 @@ const cards = {
       Diciembre 2015<br><br>
 
       Bullrich 133  <br>
-     Diciembre 2015
+     Diciembre 2015<br>
 
      El Salvador 969   <br>
      Diciembre 2024<br><br>
