@@ -59,6 +59,8 @@ const cards = {
     text: `
     <div style="text-align: left;">
       <strong>No visitar</strong><br><br>
+      Alberdi 331<br>
+      Junio 2025<BR>
     </div>
   `
   },
