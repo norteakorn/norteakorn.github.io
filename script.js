@@ -407,7 +407,10 @@ const cards = {
     img: "images/Territorio 41.png",
     text: `
     <div style="text-align: left;">
-      <strong>No visitar</strong><br><br>
+      <strong>No visitar</strong><br><br>|
+
+      Yrigoyen 29004<br>
+      22-08-2025<br>
     </div>
   `
   },
