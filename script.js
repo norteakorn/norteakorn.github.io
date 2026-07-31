@@ -366,7 +366,10 @@ const cards = {
       <strong>No visitar</strong><br><br>
 
       25 de Mayo 187<br>
-      Diciembre 2015<br>
+      Diciembre 2015<br><br>
+
+      25 de Mayo 196<br>
+      Octubre 2025<br>
       </div>
    ` 
   },
