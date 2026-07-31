@@ -122,6 +122,9 @@ const cards = {
 
      El Salvador 969   <br>
      Diciembre 2024<br><br>
+
+     San Martin 620<br>
+     Diciembre 2025<br><br>
     </div>
   `
   },
@@ -469,6 +472,9 @@ const cards = {
   text: `
     <div style="text-align: left;">
       <strong>No visitar</strong><br><br>
+
+      Santa Maria 1935<br>
+      Febrero 2026<br><br>
     </div>
   `
 },
